@@ -1,6 +1,8 @@
-git checkout -b homework-branch
-git rm *.sh
-echo "This is a new file for the homework." > file13.txt
-git add file13.txt
-git commit -m "Add file13.txt for homework"
-git push origin homework-branch
+git checkout -b branch2
+touch file4
+echo "didjj" >> file4
+git add file4
+git commit -m "Add file4"
+echo "Some changes to file4" >> file4
+git stash
+git checkout main
